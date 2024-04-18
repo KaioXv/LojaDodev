@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    
+    <link rel="stylesheet" href="/css/produtos.css">
+
+    <link rel="stylesheet" href="/css/estilos.css">
+    
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="left-side-menu">
+                <div class="logo">
+                    <img src="/images/logo.svg" alt="">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Sobre.html">Sobre Nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right-side-menu">
+                <button id="show-cart-btn" onclick="showCart()"><img src="/images/icon-cart.svg" alt=""></button>
+            </div>
+        </div>
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeCart()">&times;</span>
+                <h2>Carrinho de Compras</h2>
+                <ul id="cart-items">
+                    
+                </ul>
+                <p id="cart-total">Total: R$0,00</p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        
+    </header>
+        <div class="cabecalho">
+            <H1 id="tt"> Sneaker company</H1>
+        <h2>Sobre nós</h2>
+        
+        <span>BEM-VINDO À Sneaker Company!
+
+            Somos mais do que uma simples loja de calçados; somos uma comunidade apaixonada por estilo, autenticidade e inovação. Na Sneaker Company, não apenas vendemos tênis, mas também celebramos a cultura sneakerhead e a arte do design de calçados.
+            
+            Nossa missão é fornecer aos nossos clientes uma experiência excepcional de compra, oferecendo uma seleção diversificada dos tênis mais procurados do mercado, desde clássicos atemporais até as últimas tendências da moda. Cada par de tênis em nossa coleção é cuidadosamente selecionado, garantindo qualidade, conforto e estilo incomparáveis.
+            
+            Além de oferecer uma ampla gama de marcas renomadas, também nos orgulhamos de colaborar com designers independentes e marcas emergentes, trazendo para você modelos exclusivos e edições limitadas que você não encontrará em nenhum outro lugar.
+            
+            Na Sneaker Company, acreditamos que os sapatos são mais do que apenas acessórios; são expressões de individualidade e personalidade. Quer você seja um colecionador ávido, um entusiasta da moda ou alguém que simplesmente aprecia um bom par de tênis, temos algo especial para você.
+            
+            Convidamos você a explorar nossa loja online ou visitar nossa loja física, onde nossa equipe dedicada terá prazer em ajudá-lo a encontrar o par perfeito que complementará seu estilo único.
+            
+            Junte-se à comunidade Sneaker Company e eleve seu jogo de calçados para o próximo nível!
+            
+            Saudações,
+            A equipe Sneaker Company</span>
+
+
+            
+
+        
+
+
+
+        </div>
+
+
+        
+        <section> 
+            <div class="form-container">
+                <h2 >Deseja receber promoções?</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <div class="half-width">
+                            <label for="">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="half-width">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="half-width">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXX-XXXX">
+                        </div>
+                        <div class="half-width">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+
+        <script src="/JS/app.js"></script>
+        <script src="/JS/formulario.js"></script>
+
+
+       
+</body>
+</html>

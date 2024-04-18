@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    
+    
+</head>
+
+
+<body>
+    <div class="wrapper"></div>
+    <header>
+        <div class="menu">
+            <div class="left-side-menu">
+                <div class="logo">
+                    <img src="/images/logo.svg" alt="">
+                </div>
+                
+
+                <nav>
+                    
+                    <ul>
+                        
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Sobre.html">Sobre Nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right-side-menu">
+                <button id="show-cart-btn" onclick="showCart()"><img src="/images/icon-cart.svg" alt=""></button>
+            </div>
+        </div>
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeCart()">&times;</span>
+                <h2>Carrinho de Compras</h2>
+                <ul id="cart-items">
+                    
+                </ul>
+                <p id="cart-total">Total: R$0,00</p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        
+    </header>
+    <h2>Produtos Disponiveis</h2>
+    
+    
+    
+    
+        
+        <div class="product-container">
+            <div class="product">
+                <a href="produto1.html">
+                    <img src="/images/image-product-1.jpg" alt="Produto 1">
+                    </a>
+                    <p>Sapatenis</p>
+                    <p>300R$</p>
+                
+            </div>
+            <div class="product">
+                <a href="produto2.html">
+                    <img src="https://imgnike-a.akamaihd.net/1920x1920/016510IN.jpg" alt="Produto 2">
+                </a>
+                
+                <p>Jordans 2</p>
+                <p>900R$</p>
+            </div>
+            <div class="product">
+                <a href="produto3.html">
+                    <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/32c151dc88224a6f93b1af1200ec5a6a_9366/Tenis_Response_Runner_Preto_ID7336_01_standard.jpg" alt="Produto 3">
+                </a>
+                
+                <p>WindBreaker</p>
+                <p>379R$</p>
+            </div>
+            <br>
+
+
+            <section> 
+                <div class="form-container">
+                    <h2 >Deseja receber promoções?</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <div class="half-width">
+                                <label for="">Nome:</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="half-width">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="half-width">
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXX-XXXX">
+                            </div>
+                            <div class="half-width">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+    
+    
+    
+            <script src="/JS/app.js"></script>
+            <script src="/JS/formulario.js"></script>
+    
+</body>
+</html>
